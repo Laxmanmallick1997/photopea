@@ -1,0 +1,24 @@
+{
+  "name": "laxman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "set APP_DEV=true && electron . test.jpg",
+    "startsimple": "set APP_DEV=true && electron .",
+    "starttest": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "electron": "ELECTRON_DISABLE_SECURITY_WARNINGS=true electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "custom-electron-titlebar": "^4.1.0",
+    "electron": "^19.0.7",
+    "electron-builder": "^23.1.0"
+  },
+  "build": {
+    "appId": "com.electron.photopealoader"
+  }
+}
